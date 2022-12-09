@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SDF2CSV</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div class=header>
+            <h1 align=center style="color: ghostwhite;">SDF2CSV</h1>
+        </div>
+        <br>
+        <br>
+        <div class=upload>
+            <h3>Input SDF File</h3>
+            <div style="margin-left: 20px;">
+            <form action="/upload-file" method="POST" enctype="multipart/form-data">
+                <div id=upload_file>
+                    <label>Upload File</label>
+                    <div id=sdffile>
+                        <input type="file" class=EXTRACT"custom-file-input" name="sdffile" id="sdffile" style="display: inline; padding-right: 20px;">
+                        <button type="submit" class="btn btn-primary" style="display: inline;">EXTRACT</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class=footer>
+            <ul align=center>
+                <li style="display: inline; padding-right: 5mm; color: ghostwhite;"><a href="/about">About</a></li>
+                <li style="display: inline; padding-right: 5mm; color: ghostwhite;"><a href="/contact">Contact us</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

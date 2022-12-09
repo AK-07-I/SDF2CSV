@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SDF2CSV</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <div class=header>
+            <h1 align=center style="color: cornflowerblue;">SDF2CSV</h1>
+        </div>
+        <br>
+        <div class=download>
+            <h4>File Ready</h4>
+            <p>
+                Click the link below to download the data as csv file.
+                <a href="{{url_for('download_csv')}}">Download as CSV</a>
+                <br>
+                To go back <a href="{{url_for('home')}}">Click Here</a>
+            </p>
+        </div>
+        <br>
+        <div class=footer>
+            <ul align=center>
+                <li style="display: inline; padding-right: 5mm;"><a href="/about">About</a></li>
+                <li style="display: inline; padding-right: 5mm;"><a href="/contact">Contact us</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
